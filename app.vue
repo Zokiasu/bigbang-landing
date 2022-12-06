@@ -1,46 +1,29 @@
 <template>
   <div class="text-white bg-black snap-mandatory snap-y px-5 lg:px-0">
-
     <section id="home_logo" class="min-h-screen w-full flex items-center">
-      <div class="space-y-2 xl:space-y-6 2xl:space-y-10 mx-auto">
-        <div
-          id="bb_logo"
-          class="flex flex-col space-y-1.5 md:space-y-2.5 lg:space-y-5"
-        >
-          <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
-          <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
-          <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
-          <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
-          <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
-        </div>
-        <h1
-          id="main_title"
-          class="font-[Teko] font-bold text-center text-7xl lg:text-9xl 2xl:text-[230px]"
-        >
-          BIGBANG
-        </h1>
-      </div>
+      <bb-logo class="mx-auto"/>
     </section>
 
-
-
     <section id="group_description" class="container mx-auto min-h-[50vh] pb-64 px-10 lg:px-20">
+      <icons-bigbang-crown class="w-14 h-14 mx-auto"/>
+      <h3 class="text-4xl font-bold font-[Teko] text-center pb-14 lg:pb-20">
+        WHO ARE THEY?
+      </h3>
       <div class="mx-auto">
-        <p class="leading-relaxed text-xl">
+        <p class="leading-relaxed text-lg lg:text-xl">
           Big Bang, est un boys band de K-pop sud-coréen, originaire de Séoul. Il se composait de cinq membres jusqu'au départ de Seungri en mars 2019. Le groupe est mené par le rappeur G-Dragon. À ses côtés se trouvent Taeyang qu'il connaît depuis son enfance, ainsi que T.O.P et Daesung. À leurs débuts en 2006, ils sont considérés comme étant la nouvelle figure montante de leur label, YG Entertainment. Leurs débuts sont en effet prometteurs, mais c'est à la sortie du single Lies en 2007 qu'ils connaissent véritablement le succès. Le groupe est connu pour sa musique, mais aussi pour le style vestimentaire de ses membres, surtout de leur leader, souvent surpris à des semaines de la mode ainsi que des défilés, devenu célèbre à travers tout le pays et même à l’échelle internationale.
           <br><br>
           En juillet 2017, ils deviennent le premier groupe sud-coréen à avoir neuf vidéos avec cent millions de vues.
           <br><br>
           Big Bang est considéré comme étant les « Rois de la K-pop ». En effet, l'implication des membres dans la composition et la production de leur propre musique, notamment G-Dragon, a valu au groupe le respect et l’éloge de l'industrie musicale.
-          <br><br>
-          Source: Wikipédia
+          <br>
+          <span class="text-base">Source: Wikipédia</span>
         </p>
       </div>
     </section>
+
     <section id="group_members" class="container w-full mx-auto min-h-screen">
-      <div class="flex w-full justify-center pb-32">
-        <icons-bigbang-crown class="w-14 h-14"/>
-      </div>
+      <icons-bigbang-crown class="w-14 h-14 mx-auto mb-5"/>
       <div class="space-y-40">
         <div class="flex flex-col lg:flex-row lg:items-end text-xl gap-10">
           <img
@@ -49,13 +32,13 @@
             alt="gdragon picture leader of bigbang"
           />
           <div class="max-w-xl">
-            <h3 class="font-semibold font-[Teko] text-4xl">G-Dragon</h3>
+            <h2 class="font-semibold font-[Teko] text-4xl">G-Dragon</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse placeat tempora sequi explicabo. Aperiam blanditiis atque est, quis beatae temporibus ratione iure culpa suscipit, ipsa quos, a numquam minima.</p>
           </div>
         </div>
         <div class="flex flex-col-reverse lg:flex-row lg:justify-end lg:items-end lg:text-right text-xl gap-10">
           <div class="max-w-xl">
-            <h3 class="font-semibold font-[Teko] text-4xl">T.O.P</h3>
+            <h2 class="font-semibold font-[Teko] text-4xl">T.O.P</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse placeat tempora sequi explicabo. Aperiam blanditiis atque est, quis beatae temporibus ratione iure culpa suscipit, ipsa quos, a numquam minima.</p>
           </div>
           <img class="hover:scale-110 transition duration-300 ease-in-out" src="@/assets/image/TOP.png" alt="top picture">
@@ -63,13 +46,13 @@
         <div class="flex flex-col lg:flex-row lg:items-end text-xl gap-10">
           <img class="hover:scale-110 transition duration-300 ease-in-out" src="@/assets/image/TAEYANG.png" alt="taeyang picture">
           <div class="max-w-xl">
-            <h3 class="font-semibold font-[Teko] text-4xl">Taeyang</h3>
+            <h2 class="font-semibold font-[Teko] text-4xl">Taeyang</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse placeat tempora sequi explicabo. Aperiam blanditiis atque est, quis beatae temporibus ratione iure culpa suscipit, ipsa quos, a numquam minima.</p>
           </div>
         </div>
         <div class="flex flex-col-reverse lg:flex-row lg:justify-end lg:items-end lg:text-right text-xl gap-10">
           <div class="max-w-xl">
-            <h3 class="font-semibold font-[Teko] text-4xl">Daesung</h3>
+            <h2 class="font-semibold font-[Teko] text-4xl">Daesung</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse placeat tempora sequi explicabo. Aperiam blanditiis atque est, quis beatae temporibus ratione iure culpa suscipit, ipsa quos, a numquam minima.</p>
           </div>
           <img class="hover:scale-110 transition duration-300 ease-in-out" src="@/assets/image/DAESUNG.png" alt="daesung picture">
@@ -79,7 +62,7 @@
             <div class="flex flex-col lg:flex-row lg:items-end text-xl gap-10">
               <img class="hover:scale-110 transition duration-300 ease-in-out" src="@/assets/image/SEUNGRI.jpg" alt="seungri picture">
               <div class="max-w-xl">
-                <h3 class="font-semibold font-[Teko] text-4xl">Seungri</h3>
+                <h2 class="font-semibold font-[Teko] text-4xl">Seungri</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse placeat tempora sequi explicabo. Aperiam blanditiis atque est, quis beatae temporibus ratione iure culpa suscipit, ipsa quos, a numquam minima.</p>
               </div>
             </div>
@@ -97,13 +80,17 @@
         </div>
       </div>
     </section>
+
     <h3 class="text-4xl font-bold font-[Teko] text-center">
       STILL LIFE
     </h3>
+
     <video-section id="last_music_video" class="snap-center" />
+
     <section id="crown_separate" class="flex w-full justify-center pt-20">
       <icons-bigbang-crown class="w-14 h-14"/>
     </section>
+
     <section id="concert_examples" class="container mx-auto pb-20">
       <h3 class="text-4xl font-bold font-[Teko] text-center pb-20">
         King of Kpop, Kpop Emperor, Idol of Idols
@@ -155,6 +142,7 @@
         </div>
       </div>
     </section>
+
     <!-- <section id="music_videos" class="container mx-auto py-20">
       <h3 class="text-4xl font-bold font-[Teko] text-center pb-20">
         THEIR MUSICS
@@ -172,6 +160,7 @@
         <a href="https://www.youtube.com/playlist?list=PL0D12C278EAF39032" target="_blank" class="w-full text-right font-bold font-[Teko] text-xl">SEE MORE</a>
       </div>
     </section> -->
+    
     <section id="medias" class="container mx-auto pb-20 lg:py-20">
       <h3 class="text-4xl font-bold font-[Teko] text-center pb-14 lg:pb-20">
         MEDIAS
@@ -219,6 +208,7 @@
         </div>
       </div>
     </section>
+
     <section id="disclaimer" class="container mx-auto pb-20 lg:py-20">
       <h3 class="text-4xl font-bold font-[Teko] text-center pb-10">
         DISCLAIMER
@@ -232,6 +222,8 @@
 </template>
 
 <script>
+  import 'animate.css';
+  
   export default {
     name: 'Bigbang',
 
