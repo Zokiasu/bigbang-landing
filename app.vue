@@ -4,20 +4,16 @@
       <bb-logo class="mx-auto"/>
     </section>
 
-    <section id="group_description" class="container mx-auto min-h-[50vh] pb-64 px-10 lg:px-20">
+    <section id="group_description" class="container mx-auto min-h-[70vh] lg:px-20">
       <icons-bigbang-crown class="w-14 h-14 mx-auto"/>
       <h3 class="text-4xl font-bold font-[Teko] text-center pb-14 lg:pb-20">
         WHO ARE THEY?
       </h3>
       <div class="mx-auto">
         <p class="leading-relaxed text-lg lg:text-xl">
-          Big Bang, est un boys band de K-pop sud-coréen, originaire de Séoul. Il se composait de cinq membres jusqu'au départ de Seungri en mars 2019. Le groupe est mené par le rappeur G-Dragon. À ses côtés se trouvent Taeyang qu'il connaît depuis son enfance, ainsi que T.O.P et Daesung. À leurs débuts en 2006, ils sont considérés comme étant la nouvelle figure montante de leur label, YG Entertainment. Leurs débuts sont en effet prometteurs, mais c'est à la sortie du single Lies en 2007 qu'ils connaissent véritablement le succès. Le groupe est connu pour sa musique, mais aussi pour le style vestimentaire de ses membres, surtout de leur leader, souvent surpris à des semaines de la mode ainsi que des défilés, devenu célèbre à travers tout le pays et même à l’échelle internationale.
+          Bigbang est un groupe de cinq membres composé de G-Dragon, T.O.P, Taeyang, Daesung et Seungri. Depuis leur formation en 2006, ils ont connu un immense succès en Corée du Sud et à l'international grâce à leur musique unique et à leur talent pour la danse. 
           <br><br>
-          En juillet 2017, ils deviennent le premier groupe sud-coréen à avoir neuf vidéos avec cent millions de vues.
-          <br><br>
-          Big Bang est considéré comme étant les « Rois de la K-pop ». En effet, l'implication des membres dans la composition et la production de leur propre musique, notamment G-Dragon, a valu au groupe le respect et l’éloge de l'industrie musicale.
-          <br>
-          <span class="text-base">Source: Wikipédia</span>
+          Bigbang a remporté de nombreux prix, notamment aux Mnet Asian Music Awards et aux Seoul Music Awards, ainsi que le prix "World's Best Group" aux World Music Awards en 2012. Leur album "MADE" a également atteint la première place du classement Billboard World Albums Chart. Bigbang est considéré comme l'un des groupes les plus influents et populaires de la Kpop.
         </p>
       </div>
     </section>
@@ -99,14 +95,14 @@
         <div class="space-y-2">
           <iframe
             ref="iframe"
-            class="w-full h-full max-w-2xl object-cover aspect-video" 
+            class="w-full h-full max-w-2xl object-cover aspect-video mx-auto lg:mr-auto lg:ml-0" 
             src="https://www.youtube.com/embed/4x9C31ECfRM" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
           >
           </iframe>
-          <p class="font-bold font-[Teko] text-2xl">
+          <p class="font-bold md:text-xl text-center lg:text-left">
             BIGBANG - BANG BANG BANG<br>
             Mama 2015
           </p>
@@ -114,14 +110,14 @@
         <div class="space-y-2">
           <iframe
             ref="iframe"
-            class="w-full h-full max-w-2xl object-cover aspect-video lg:ml-auto" 
+            class="w-full h-full max-w-2xl object-cover aspect-video mx-auto lg:ml-auto lg:mr-0" 
             src="https://www.youtube.com/embed/bGZZxgixkew" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
           >
           </iframe>
-          <p class="font-bold font-[Teko] text-2xl lg:text-right">
+          <p class="font-bold md:text-xl text-center lg:text-right">
             BIGBANG - LOSER + BAE BAE + BANG BANG BANG<br>
             Mama 2015
           </p>
@@ -129,14 +125,14 @@
         <div class="space-y-2">
           <iframe
             ref="iframe"
-            class="w-full h-full max-w-2xl object-cover aspect-video" 
+            class="w-full h-full max-w-2xl object-cover aspect-video mx-auto lg:mr-auto lg:ml-0" 
             src="https://www.youtube.com/embed/1F3HKthaaIA" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
           >
           </iframe>
-          <p class="font-bold font-[Teko] text-2xl">
+          <p class="font-bold md:text-xl text-center lg:text-left">
             BIGBANG | Mama Performances
           </p>
         </div>
@@ -272,9 +268,7 @@
   }
 </script>
 
-<style> 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@600&display=swap');
-
+<style>
   .title-group {
     font-family: 'Teko', sans-serif;
     @apply text-4xl md:text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center;

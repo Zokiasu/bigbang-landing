@@ -2,14 +2,15 @@
   <section class="min-h-screen w-full relative">
     <iframe
       ref="iframe"
-      class="absolute inset-0 w-full h-full object-cover p-10 xl:px-20" 
-      src="https://www.youtube.com/embed/eN5mG_yMDiM?rel=0&enablejsapi=1&controls=0&loop=1&playlist=eN5mG_yMDiM" 
+      class="absolute inset-0 w-full h-full object-cover lg:p-10 xl:px-20" 
+      src="https://www.youtube.com/embed/eN5mG_yMDiM?rel=0&enablejsapi=1&controls=0&loop=1&playlist=eN5mG_yMDiM&showinfo=0&autoplay=1&modestbranding=1&iv_load_policy=3"
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
     >
     </iframe>
     <div
+      id="filtre"
       class="inset-0 absolute flex items-center"
       :class="muted ? 'bg-black/70':'bg-transparent'"
     >
@@ -25,16 +26,21 @@
       </div>
 
     </div>
-    <div class="absolute overflow-hidden top-10 right-5 text-xl font-bold font-[Roboto]">
-      <div class="z-10 flex flex-col items-center space-y-5">
-        <button @click="resetTimer()">
+
+    <div class="absolute overflow-hidden top-10 lg:right-5 text-xl font-bold font-[Roboto]">
+      <div class="z-10 flex flex-row lg:flex-col items-center space-x-5 lg:space-x-0 lg:space-y-5">
+
+        <button id="resetButton" @click="resetTimer()">
           <IconsReset class="w-10 h-10"/>
         </button>
-        <button @click="unmute()" class="text-base hover:text-red-700">
+
+        <button id="muteButton" @click="unmute()">
           <IconsSongOff v-if="muted" class="w-10 h-10" />
           <IconsSongOn v-else class="w-10 h-10"/>
         </button>
+
         <input
+          id="volumeSlider"
           class="bg-transparent focus:outline-none volume"
           v-if="!muted"
           step="10"
@@ -105,10 +111,13 @@
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@600&display=swap'); </style>
 
 <style>
-  .volume {
-    -webkit-appearance: slider-vertical; /* Chromium */
-    width: 8px;
-    height: 175px;
-    padding: 0 5px;
+
+  @media (min-width: 1024px) {
+    .volume {
+      -webkit-appearance: slider-vertical; /* Chromium */
+      width: 8px;
+      height: 175px;
+      padding: 0 5px;
+    }
   }
 </style>
