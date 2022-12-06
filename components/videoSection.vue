@@ -2,15 +2,15 @@
   <section class="min-h-screen w-full relative">
     <iframe
       ref="iframe"
-      class="absolute inset-0 xl:p-20 w-full h-full object-cover" 
-      src="https://www.youtube.com/embed/eN5mG_yMDiM?enablejsapi=1&controls=0&loop=1&playlist=eN5mG_yMDiM" 
+      class="absolute inset-0 w-full h-full object-cover p-10 xl:px-20" 
+      src="https://www.youtube.com/embed/eN5mG_yMDiM?rel=0&enablejsapi=1&controls=0&loop=1&playlist=eN5mG_yMDiM" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
     >
     </iframe>
-    <div 
-      class="inset-0 absolute flex items-center intro"
+    <div
+      class="inset-0 absolute flex items-center"
       :class="muted ? 'bg-black/70':'bg-transparent'"
     >
       <div v-if="muted" class="text-4xl md:text-7xl lg:text-9xl 2xl:text-[150px] font-bold text-center space-y-2 xl:space-y-6 2xl:space-y-10 mx-auto transition-all duration-300 ease-in-out">
@@ -25,11 +25,17 @@
       </div>
 
     </div>
-    <div class="absolute top-5 flex items-center w-full px-5 lg:px-10 xl:px-20 text-xl font-bold font-[Roboto] justify-end">
-      <!-- <p class="transition-all duration-300 ease-in-out hidden xl:block">THEIR LATEST RELEASE</p>
-      <p>STILL LIFE</p> -->
-      <div class="z-10 flex space-x-5 items-center">
+    <div class="absolute overflow-hidden top-10 right-5 text-xl font-bold font-[Roboto]">
+      <div class="z-10 flex flex-col items-center space-y-5">
+        <button @click="resetTimer()">
+          <IconsReset class="w-10 h-10"/>
+        </button>
+        <button @click="unmute()" class="text-base hover:text-red-700">
+          <IconsSongOff v-if="muted" class="w-10 h-10" />
+          <IconsSongOn v-else class="w-10 h-10"/>
+        </button>
         <input
+          class="bg-transparent focus:outline-none volume"
           v-if="!muted"
           step="10"
           type="range"
@@ -38,10 +44,6 @@
           v-model="volume"
           @change="setVolume(volume)"
         />
-        <button @click="unmute()" class="text-base hover:text-red-700">
-          <IconsSongOff v-if="muted" class="w-10 h-10" />
-          <IconsSongOn v-else class="w-10 h-10"/>
-        </button>
       </div>
     </div>
   </section>
@@ -90,9 +92,23 @@
       setVolume(volume){
         const iframe = this.$refs.iframe;
         iframe.contentWindow.postMessage('{"event":"command","func":"setVolume","args":['+volume+']}', '*')
+      },
+      // post message to iframe to set timer
+      resetTimer() {
+        const iframe = this.$refs.iframe;
+        iframe.contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0]}', '*')
       }
     }
   }
 </script>
 
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@600&display=swap'); </style>
+
+<style>
+  .volume {
+    -webkit-appearance: slider-vertical; /* Chromium */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+  }
+</style>

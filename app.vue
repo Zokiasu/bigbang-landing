@@ -1,18 +1,30 @@
 <template>
   <div class="text-white bg-black snap-mandatory snap-y px-5 lg:px-0">
+
     <section id="home_logo" class="min-h-screen w-full flex items-center">
       <div class="space-y-2 xl:space-y-6 2xl:space-y-10 mx-auto">
-        <div class="flex flex-col space-y-1.5 md:space-y-2.5 lg:space-y-5">
+        <div
+          id="bb_logo"
+          class="flex flex-col space-y-1.5 md:space-y-2.5 lg:space-y-5"
+        >
           <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
           <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
           <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
           <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
           <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
         </div>
-        <p class="font-[Teko] text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center">BIGBANG</p>
+        <h1
+          id="main_title"
+          class="font-[Teko] font-bold text-center text-7xl lg:text-9xl 2xl:text-[230px]"
+        >
+          BIGBANG
+        </h1>
       </div>
     </section>
-    <section id="groupp_description" class="container mx-auto min-h-[50vh] pb-64 px-10 lg:px-20">
+
+
+
+    <section id="group_description" class="container mx-auto min-h-[50vh] pb-64 px-10 lg:px-20">
       <div class="mx-auto">
         <p class="leading-relaxed text-xl">
           Big Bang, est un boys band de K-pop sud-coréen, originaire de Séoul. Il se composait de cinq membres jusqu'au départ de Seungri en mars 2019. Le groupe est mené par le rappeur G-Dragon. À ses côtés se trouvent Taeyang qu'il connaît depuis son enfance, ainsi que T.O.P et Daesung. À leurs débuts en 2006, ils sont considérés comme étant la nouvelle figure montante de leur label, YG Entertainment. Leurs débuts sont en effet prometteurs, mais c'est à la sortie du single Lies en 2007 qu'ils connaissent véritablement le succès. Le groupe est connu pour sa musique, mais aussi pour le style vestimentaire de ses membres, surtout de leur leader, souvent surpris à des semaines de la mode ainsi que des défilés, devenu célèbre à travers tout le pays et même à l’échelle internationale.
@@ -85,6 +97,9 @@
         </div>
       </div>
     </section>
+    <h3 class="text-4xl font-bold font-[Teko] text-center">
+      STILL LIFE
+    </h3>
     <video-section id="last_music_video" class="snap-center" />
     <section id="crown_separate" class="flex w-full justify-center pt-20">
       <icons-bigbang-crown class="w-14 h-14"/>
@@ -163,43 +178,43 @@
       </h3>
       <div class="space-y-10">
         <div class="flex flex-wrap gap-10 justify-center mx-auto">
-          <a href="https://www.youtube.com/channel/UCzw-C7fNfs018R1FzIKnlaA" class="flex space-x-2 jusce items-center">
-            <icons-youtube class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">YOUTUBE</p>
+          <a href="https://www.youtube.com/channel/UCzw-C7fNfs018R1FzIKnlaA" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-red-700">
+            <icons-youtube class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Youtube</p>
           </a>
-          <a href="https://www.facebook.com/BIGBANG/" class="flex space-x-2 jusce items-center">
-            <icons-facebook class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">FACEBOOK</p>
+          <a href="https://www.facebook.com/BIGBANG/" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-blue-700">
+            <icons-facebook class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Facebook</p>
           </a>
-          <a href="https://twitter.com/YG_GlobalVIP" class="flex space-x-2 jusce items-center">
-            <icons-twitter class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">TWITTER</p>
+          <a href="https://twitter.com/YG_GlobalVIP" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-blue-400">
+            <icons-twitter class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Twitter</p>
           </a>
-          <!-- <a href="https://twitter.com/YG_GlobalVIP" class="flex space-x-2 jusce items-center">
-            <icons-tiktok class="w-10 h-10"/>
+          <!-- <a href="https://twitter.com/YG_GlobalVIP" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-red-700">
+            <icons-tiktok class="w-8 h-8"/>
             <p class="font-bold font-[Teko] pt-1.5 text-xl">TIKTOK</p>
           </a> -->
         </div>
         <div class="flex flex-wrap gap-10 justify-center mx-auto">
-          <a href="https://music.youtube.com/channel/UCI5OIwx9z32Zurb8t4Umzwg" class="flex space-x-2 jusce items-center">
-            <icons-youtube-music class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">YT MUSIC</p>
+          <a href="https://music.youtube.com/channel/UCI5OIwx9z32Zurb8t4Umzwg" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-red-700">
+            <icons-youtube-music class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">YT Music</p>
           </a>
-          <a href="https://open.spotify.com/artist/4Kxlr1PRlDKEB0ekOCyHgX" class="flex space-x-2 jusce items-center">
-            <icons-spotify class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">SPOTIFY</p>
+          <a href="https://open.spotify.com/artist/4Kxlr1PRlDKEB0ekOCyHgX" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-green-600">
+            <icons-spotify class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Spotify</p>
           </a>
-          <a href="https://music.apple.com/fr/artist/bigbang/318754656" class="flex space-x-2 jusce items-center">
-            <icons-apple-music class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">APPLE MUSIC</p>
+          <a href="https://music.apple.com/fr/artist/bigbang/318754656" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-purple-400">
+            <icons-apple-music class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Apple Music</p>
           </a>
-          <a href="https://tidal.com/browse/artist/12084" class="flex space-x-2 jusce items-center">
-            <icons-tidal class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">TIDAL</p>
+          <a href="https://tidal.com/browse/artist/12084" class="flex space-x-2 jusce items-center transition-all duration-500 ease-in-out hover:text-blue-900">
+            <icons-tidal class="w-8 h-8"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl">Tidal</p>
           </a>
-          <a href="https://www.deezer.com/fr/artist/65209" class="flex space-x-2 jusce items-center">
-            <icons-deezer class="w-10 h-10"/>
-            <p class="font-bold font-[Teko] pt-1.5 text-xl">DEEZER</p>
+          <a href="https://www.deezer.com/fr/artist/65209" class="flex space-x-2 jusce items-center group">
+            <icons-deezer class="w-8 h-8 group-hover:text-red-400 transition-all duration-500 ease-in-out"/>
+            <p class="font-bold font-[Teko] pt-1.5 text-xl group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-red-400 group-hover:to-cyan-600 transition-all duration-500 ease-in-out">Deezer</p>
           </a>
         </div>
       </div>
@@ -265,11 +280,11 @@
   }
 </script>
 
-<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@600&display=swap'); </style>
+<style> 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@600&display=swap');
 
-<style>
-.title-group {
-  font-family: 'Teko', sans-serif;
-  @apply text-4xl md:text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center;
-}
+  .title-group {
+    font-family: 'Teko', sans-serif;
+    @apply text-4xl md:text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center;
+  }
 </style>
