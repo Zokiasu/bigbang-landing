@@ -5,6 +5,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
 
+  plugins: [
+    '@/plugins/locomotiveScroll.client.js',
+  ],
+
   css: [
     'animate.css/animate.min.css',
   ],
