@@ -4,19 +4,7 @@
       <bb-logo class="mx-auto"/>
     </section>
 
-    <section data-scroll-section data-scroll-speed="-8" data-scroll-position="top" id="description_section" class="container mx-auto min-h-[70vh] lg:px-20">
-      <icons-bigbang-crown id="crown_description" class="hidden w-14 h-14 mx-auto"/>
-      <h3 id="title_description" class="hidden text-4xl font-bold font-[Teko] text-center pb-14 lg:pb-20">
-        WHO ARE THEY?
-      </h3>
-      <p id="description" class="hidden leading-relaxed text-lg lg:text-xl mx-auto">
-        Bigbang est un groupe de cinq membres composé de G-Dragon, T.O.P, Taeyang, Daesung et Seungri. Depuis leur formation en 2006, ils ont connu un immense succès en Corée du Sud et à l'international grâce à leur musique unique et à leur talent pour la danse. 
-        <br><br>
-        Bigbang a remporté de nombreux prix, notamment aux Mnet Asian Music Awards et aux Seoul Music Awards, ainsi que le prix "World's Best Group" aux World Music Awards en 2012. Leur album "MADE" a également atteint la première place du classement Billboard World Albums Chart. Bigbang est considéré comme l'un des groupes les plus influents et populaires de la Kpop.
-        <br><br>
-        Après un hiatus de près de 4 ans, le groupe est revenu avec un nouveau single "Still Life", qui a atteint la première place du classement Gaon Digital Chart et leur à permis d'obtenir le prix "Best Vocal Performance (Groupe)" décerné au MAMA Awards 2022.
-      </p>
-    </section>
+    <description-section />
 
     <members-section />
 
@@ -50,8 +38,6 @@
           </div>
           <p data-scroll data-scroll-speed="5" class="hidden lg:block absolute bottom-40 right-40 sansita text-3xl opacity-60">They have so many names</p>
         </div>
-
-        <!-- <p data-scroll data-scroll-speed="5" class="mx-auto text-center sansita text-3xl opacity-60">They gave so many memories</p> -->
 
         <div data-scroll data-scroll-speed="3" class="relative">
           <p data-scroll data-scroll-speed="5" class="hidden lg:block absolute top-20 bottom-0 left-0 sansita text-3xl opacity-60">They gave so many memories</p>
@@ -158,24 +144,7 @@
     name: 'Bigbang',
 
     mounted(){
-      this.locomotiveScrollInit()
-      let recaptchaScript = document.createElement('script')
-      recaptchaScript.setAttribute('src', "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js")
-      document.head.appendChild(recaptchaScript)
-
-      
-      this.scroll.on('scroll', (instance) => {
-        if (instance.scroll.y > 100) {
-          document.querySelector('#crown_description').classList.remove('hidden')
-          document.querySelector('#crown_description').classList.add('animate__animated', 'animate__fadeInDown')
-          document.querySelector('#crown_description').style.setProperty('--animate-duration', '1.5s');
-          document.querySelector('#title_description').classList.remove('hidden')
-          document.querySelector('#title_description').classList.add('animate__animated', 'animate__fadeInUp')
-          document.querySelector('#description').classList.remove('hidden')
-          document.querySelector('#description').classList.add('animate__animated', 'animate__fadeInUp')
-        }
-      })
-
+      this.locomotiveScrollInit();
     },
 
     methods: {
@@ -184,8 +153,6 @@
           el: document.querySelector('[data-scroll-container]'),
           smooth: true
         })
-
-        // this.scroll.stop()
       },
     }
   }

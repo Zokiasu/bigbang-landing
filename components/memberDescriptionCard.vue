@@ -7,11 +7,12 @@
     <img
       :src="image"
       :alt="altImage"
+      class="invisible"
       data-scroll data-scroll-delay="0.1" data-scroll-speed="6"
     />
     <div class="max-w-xl">
-      <h2 class="font-semibold font-[Teko] text-4xl">{{ title }}</h2>
-      <p class="text-base lg:text-lg">{{ description }}</p>
+      <h2 class="font-semibold font-[Teko] text-4xl invisible">{{ title }}</h2>
+      <p class="text-base lg:text-lg invisible">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -52,6 +53,7 @@ export default {
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          img.classList.remove('invisible');
           img.classList.add('animate__animated', 'animate__fadeInUp');
         }
       });
@@ -62,17 +64,42 @@ export default {
     const imgObserverOut = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
+          img.classList.add('invisible');
           img.classList.remove('animate__animated', 'animate__fadeInUp');
         }
       });
     });
     imgObserverOut.observe(img);
 
+    // add transition fadeIn on h2 when user scroll to the component
+    const h2 = this.$el.querySelector('h2');
+    const h2Observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          h2.classList.remove('invisible');
+          h2.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+    });
+    h2Observer.observe(h2);
+
+    // remove the transition fadeIn on h2 when user scroll out of the component
+    const h2ObserverOut = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          h2.classList.add('invisible');
+          h2.classList.remove('animate__animated', 'animate__fadeInUp');
+        }
+      });
+    });
+    h2ObserverOut.observe(h2);
+
     // add transition fadeIn on p when user scroll to the component
     const p = this.$el.querySelector('p');
     const pObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          p.classList.remove('invisible');
           p.classList.add('animate__animated', 'animate__fadeInUp');
         }
       });
@@ -83,6 +110,7 @@ export default {
     const pObserverOut = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
+          p.classList.add('invisible');
           p.classList.remove('animate__animated', 'animate__fadeInUp');
         }
       });
