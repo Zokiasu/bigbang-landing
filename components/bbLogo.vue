@@ -12,7 +12,7 @@
     </div>
     <h1
       ref="main_title"
-      class="invisible font-[Teko] font-bold text-center text-7xl md:text-[110px] 2xl:text-[230px]"
+      class="invisible teko font-bold text-center text-7xl md:text-[110px] 2xl:text-[230px]"
     >
       BIGBANG
     </h1>

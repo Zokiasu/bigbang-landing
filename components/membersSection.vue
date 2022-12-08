@@ -1,6 +1,6 @@
 <template>
   <section data-scroll-section id="group_members" class="container w-full mx-auto min-h-screen">
-    <icons-bigbang-crown data-scroll data-scroll-speed="3" class="w-14 h-14 mx-auto mb-5"/>
+    <golden-crown-transition id="crown_members" data-scroll data-scroll-speed="3" class="w-14 h-14 mx-auto mb-5"/>
     <div class="space-y-40">
       <member-description-card
         data-scroll data-scroll-speed="3"
@@ -50,7 +50,7 @@
               alt="seungri picture member of bigbang"
             />
             <div class="max-w-xl">
-              <h2 class="font-semibold font-[Teko] text-4xl">Seungri</h2>
+              <h2 class="font-semibold teko text-4xl">Seungri</h2>
               <p>Seungri (également connu sous le nom de Lee Seung-hyun) est un des membres du groupe de K-Pop Bigbang. Il est connu pour ses performances vocales et ses compétences en tant que danseur. En dehors de la musique, il est également un entrepreneur et a lancé plusieurs entreprises dans divers domaines, notamment la restauration.</p>
             </div>
           </div>
@@ -63,7 +63,7 @@
           aria-expanded="false" 
           aria-controls="collapseExample"
         >
-          <icons-bigbang-crown class="w-14 h-14"/>
+          <golden-crown-transition id="crown_last_members" class="w-14 h-14"/>
         </button>
       </div>
     </div>

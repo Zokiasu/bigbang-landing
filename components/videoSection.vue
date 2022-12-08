@@ -1,6 +1,6 @@
 <template>
   <section data-scroll-section>
-    <h3 class="text-4xl font-bold font-[Teko] text-center">
+    <h3 class="text-4xl font-bold teko text-center">
       STILL LIFE
     </h3>
     <div class="min-h-screen w-full relative">
@@ -26,7 +26,7 @@
             <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
             <div class="bg-white h-1.5 md:h-2.5 lg:h-4 px-14 md:px-28 lg:px-48 2xl:px-56 mx-auto"></div>
           </div>
-          <p class="font-[Teko] text-4xl md:text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center">BIGBANG</p>
+          <p class="teko text-4xl md:text-7xl lg:text-9xl 2xl:text-[230px] font-bold text-center">BIGBANG</p>
         </div>
 
       </div>

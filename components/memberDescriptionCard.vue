@@ -11,7 +11,7 @@
       data-scroll data-scroll-delay="0.1" data-scroll-speed="6"
     />
     <div class="max-w-xl">
-      <h2 class="font-semibold font-[Teko] text-4xl invisible">{{ title }}</h2>
+      <h2 class="font-semibold teko text-4xl invisible">{{ title }}</h2>
       <p class="text-base lg:text-lg invisible">{{ description }}</p>
     </div>
   </div>
@@ -50,6 +50,10 @@ export default {
   // transition fadeIn on img when user scroll to the component
   mounted() {
     const img = this.$el.querySelector('img');
+    const h2 = this.$el.querySelector('h2');
+    const p = this.$el.querySelector('p');
+    const card = this.$el;
+
     const imgObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -60,19 +64,7 @@ export default {
     });
     imgObserver.observe(img);
 
-    // remove the transition fadeIn on img when user scroll out of the component
-    const imgObserverOut = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          img.classList.add('invisible');
-          img.classList.remove('animate__animated', 'animate__fadeInUp');
-        }
-      });
-    });
-    imgObserverOut.observe(img);
-
     // add transition fadeIn on h2 when user scroll to the component
-    const h2 = this.$el.querySelector('h2');
     const h2Observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -83,19 +75,7 @@ export default {
     });
     h2Observer.observe(h2);
 
-    // remove the transition fadeIn on h2 when user scroll out of the component
-    const h2ObserverOut = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          h2.classList.add('invisible');
-          h2.classList.remove('animate__animated', 'animate__fadeInUp');
-        }
-      });
-    });
-    h2ObserverOut.observe(h2);
-
     // add transition fadeIn on p when user scroll to the component
-    const p = this.$el.querySelector('p');
     const pObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -106,16 +86,19 @@ export default {
     });
     pObserver.observe(p);
 
-    // remove the transition fadeIn on p when user scroll out of the component
-    const pObserverOut = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          p.classList.add('invisible');
-          p.classList.remove('animate__animated', 'animate__fadeInUp');
-        }
-      });
-    });
-    pObserverOut.observe(p);
+    // const cardObserver = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (!entry.isIntersecting) {
+    //       img.classList.add('invisible');
+    //       img.classList.remove('animate__animated', 'animate__fadeInUp');
+    //       h2.classList.add('invisible');
+    //       h2.classList.remove('animate__animated', 'animate__fadeInUp');
+    //       p.classList.add('invisible');
+    //       p.classList.remove('animate__animated', 'animate__fadeInUp');
+    //     }
+    //   });
+    // });
+    // cardObserver.observe(card);
   },
 }
 </script>

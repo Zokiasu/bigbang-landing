@@ -1,7 +1,7 @@
 <template>
   <section data-scroll-section data-scroll-speed="-8" data-scroll-position="top" id="description_section" class="container mx-auto min-h-[70vh] lg:px-20">
-    <icons-bigbang-crown id="crown_description" class="invisible w-14 h-14 mx-auto"/>
-    <h3 id="title_description" class="invisible text-4xl font-bold font-[Teko] text-center pb-14 lg:pb-20">
+    <golden-crown-transition id="crown_description" class="invisible w-14 h-14 mx-auto"/>
+    <h3 id="title_description" class="invisible text-4xl font-bold teko text-center pb-14 lg:pb-20">
       WHO ARE THEY?
     </h3>
     <p id="description" class="invisible leading-relaxed text-lg lg:text-xl mx-auto">
