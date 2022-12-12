@@ -1,5 +1,5 @@
 <template>
-  <section data-scroll-section>
+  <section id="last_music_video" data-scroll-section>
     <h3 class="text-4xl font-bold teko text-center">
       STILL LIFE
     </h3>

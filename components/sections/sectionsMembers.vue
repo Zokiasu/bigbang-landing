@@ -1,6 +1,11 @@
 <template>
-  <section data-scroll-section id="group_members" class="container w-full mx-auto min-h-screen">
-    <golden-crown-transition id="crown_members" data-scroll data-scroll-speed="3" class="w-14 h-14 mx-auto mb-5"/>
+  <section id="group_members" data-scroll-section class="container w-full mx-auto min-h-screen">
+    <golden-crown-transition
+      id="crown_members"
+      data-scroll
+      data-scroll-speed="3"
+      class="w-14 h-14 mx-auto mb-5"
+    />
     <div class="space-y-40">
       <member-description-card
         data-scroll data-scroll-speed="3"
@@ -13,7 +18,7 @@
 
       <member-description-card
         data-scroll data-scroll-speed="3"
-        id="top_description2"
+        id="top_description"
         title="TOP"
         description="T.O.P (également connu sous le nom de Choi Seung-hyun) est un des membres du groupe de K-Pop Bigbang. Il est connu pour ses performances vocales et ses compétences en tant que rappeur. En dehors de la musique, il est également un acteur talentueux et a joué dans de nombreuses productions cinématographiques et télévisées en Corée du Sud."
         :image="TOP"
