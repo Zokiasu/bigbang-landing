@@ -39,7 +39,7 @@
 
         <div
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="1"
           class="relative"
         >
           <div
@@ -63,7 +63,7 @@
           </div>
           <p
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="3"
             class="hidden lg:block absolute bottom-40 right-40 sansita text-3xl opacity-60 drop-shadow-[0_35px_35px_rgba(255,255,255,0.50)]"
           >
             They have so many names
@@ -72,12 +72,12 @@
 
         <div
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="1"
           class="relative"
         >
           <p
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="3"
             class="hidden lg:block absolute top-20 bottom-0 left-0 sansita text-3xl opacity-60 drop-shadow-[0_35px_35px_rgba(255,255,255,0.50)]"
           >
             They gave so many memories
@@ -105,7 +105,7 @@
 
         <p
           data-scroll
-          data-scroll-speed="5"
+          data-scroll-speed="3"
           class="hidden lg:block mx-auto text-center sansita text-3xl opacity-60 drop-shadow-[0_35px_35px_rgba(255,255,255,0.50)]"
         >
           They wrote a part of kpop history
@@ -113,7 +113,7 @@
 
         <div
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="1"
           class="relative"
         >
           <div
@@ -136,7 +136,7 @@
           </div>
           <p
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="3"
             class="hidden lg:block absolute bottom-40 right-40 sansita text-3xl opacity-60 drop-shadow-[0_35px_35px_rgba(255,255,255,0.50)]"
           >
             And they becames legends
