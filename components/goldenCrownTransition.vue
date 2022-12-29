@@ -1,5 +1,5 @@
 <template>
-  <icons-bigbang-crown :id="id" :class="classProps"/>
+  <icons-bigbang-crown :id="id" :class="classProps" />
 </template>
 
 <script>
@@ -7,12 +7,12 @@ export default {
   props: {
     id: {
       type: String,
-      required: true
+      required: true,
     },
     classProps: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
 
   mounted() {
@@ -20,13 +20,13 @@ export default {
     const crownObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          crown.classList.add('animate__animated', 'animate__fadeInDown');
+          crown.classList.add("animate__animated", "animate__fadeInDown");
           // increase animate delay
-          crown.style.setProperty('--animate-duration', '2s');
+          crown.style.setProperty("--animate-duration", "2s");
         }
       });
     });
     crownObserver.observe(crown);
-  }
-}
+  },
+};
 </script>

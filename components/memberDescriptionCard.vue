@@ -1,23 +1,18 @@
 <template>
-  <div 
+  <div
     :id="id"
-    class="flex flex-col lg:items-end text-xl gap-10"
-    :class="rightAlign ? 'lg:text-right lg:flex-row-reverse' : 'lg:flex-row'"
+    class="flex flex-col gap-10 text-xl lg:items-end"
+    :class="rightAlign ? 'lg:flex-row-reverse lg:text-right' : 'lg:flex-row'"
   >
-    <img
-      :src="image"
-      :alt="altImage"
-      data-scroll data-scroll-speed="3"
-    />
+    <img :src="image" :alt="altImage" />
     <div class="max-w-xl">
-      <h2 class="font-semibold teko text-4xl">{{ title }}</h2>
+      <h2 class="teko text-4xl font-semibold">{{ title }}</h2>
       <p class="text-base lg:text-lg">{{ description }}</p>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   props: {
     id: {
@@ -45,5 +40,5 @@ export default {
       default: false,
     },
   },
-}
+};
 </script>

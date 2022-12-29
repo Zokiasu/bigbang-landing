@@ -10,7 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
       // that is animation class
       animation: {
         fade: 'fadeOut 5s ease-in-out',
@@ -27,6 +26,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
+    require('prettier-plugin-tailwindcss'),
   ],
 }
